@@ -1,0 +1,22 @@
+# .gitignore
+
+# Node.js
+node_modules/
+
+# React
+app/node_modules/
+app/build/
+server/node_modules/
+server/build/
+
+# Logs
+logs/
+*.log
+
+# SQLite
+*.sqlite
+*.sqlite3
+*.db
+
+# Other
+.DS_Store
