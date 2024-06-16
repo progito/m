@@ -1,0 +1,35 @@
+.tabs {
+    position: fixed; /* Зафиксировать вкладки */
+    top: 0; /* Разместить вверху страницы */
+    left: 0; /* Разместить в левом углу */
+    width: 100%; /* Занимать всю доступную ширину */
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #2a2a2a;
+    border-bottom: 2px solid #444;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
+    z-index: 999; /* Установить z-index для уровня наверху */
+
+}
+
+.tabContainer {
+    display: flex;
+}
+
+.menuIcon {
+    color: #009dff;
+    cursor: pointer;
+    transition: color 0.3s ease;
+    position: absolute; /* Абсолютное позиционирование */
+    right: 70px; /* Расположение справа */
+    top: 30px;
+    transform: translateY(-50%); /* Смещение на половину высоты иконки */
+}
+.alignRight {
+    margin-left: auto;
+}
+.menuIcon:hover {
+    color: #007acc;
+}

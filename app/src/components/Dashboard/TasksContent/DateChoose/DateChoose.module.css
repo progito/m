@@ -1,0 +1,72 @@
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 10px;
+    background-color: rgba(48, 54, 57, 0.8); /* Цвет фона с прозрачностью */
+    border: 1px solid rgba(68, 68, 68, 0.8); /* Цвет рамки */
+    border-radius: 10px; /* Радиус скругления углов */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5); /* Тень */
+    height: 30px;
+    position: relative;
+    overflow: visible; /* Чтобы видеть "вылезающий" элемент */
+    transition: transform 0.3s ease; /* Анимация масштабирования */
+}
+
+.container.active {
+    transform: scale(1.05); /* Масштабирование при активации */
+}
+
+.dateText {
+    flex: 1;
+    text-align: center;
+    color: #e0e0e0;
+    font-size: 16px;
+    margin: 0 10px;
+}
+
+.navButton, .dateButton {
+    background-color: rgba(68, 68, 68, 0.8); /* Цвет кнопок с прозрачностью */
+    border: none;
+    color: #009dff;
+    padding: 10px;
+    margin: 0 5px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+.navButton:hover, .dateButton:hover {
+    background-color: rgba(85, 85, 85, 0.8); /* Изменение цвета при наведении с прозрачностью */
+}
+
+.datePicker {
+    position: absolute;
+    bottom: calc(100% + 10px); /* Позиционирование календаря под панелью */
+    top: 85px;
+    left: 50%; /* Центрирование по горизонтали */
+    transform: translateX(-50%);
+    z-index: 9999; /* Чтобы календарь был поверх всего содержимого */
+    display: none; /* По умолчанию скрыт */
+    opacity: 0; /* По умолчанию невидим */
+    transition: opacity 0.3s ease, transform 0.3s ease; /* Анимация появления/исчезновения */
+}
+
+.container.active .datePicker {
+    display: block; /* Показываем календарь при активации */
+    opacity: 1;
+}
+
+/* Псевдоэлемент, блокирующий backdrop-filter для datepicker */
+.datePicker::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    backdrop-filter: none;
+    background-color: rgba(0, 0, 0, 0.5); /* Прозрачный фон, чтобы не видеть этот элемент */
+    pointer-events: none; /* Прозрачный для событий мыши */
+    z-index: -1; /* Расположение под основным контентом */
+}

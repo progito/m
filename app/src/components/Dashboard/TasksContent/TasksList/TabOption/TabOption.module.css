@@ -1,0 +1,107 @@
+.tabOption {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #1f1f1f; /* Цвет фона */
+    display: flex;
+    flex-direction: column; /* Кнопки идут столбиком */
+    align-items: center; /* Выравнивание по центру */
+    padding: 20px;
+    border-radius: 15px;
+    box-shadow: 0px 1px 20px 3px rgb(65 99 132 / 45%);
+    transition: bottom 0.3s ease-in-out;
+    animation: fadeInUp 0.5s ease forwards;
+    animation-play-state: paused;
+    z-index: 9999;
+}
+
+.tabOption.visible {
+    animation-play-state: running;
+}
+
+.tabOption.disable {
+    animation: fadeOutDown 0.3s ease forwards;
+}
+
+.tabOption button {
+    background-color: #333; /* dark gray */
+    color: #fff; /* white */
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+    width: 100%; /* Кнопки занимают всю ширину контейнера */
+    margin-bottom: 10px; /* Добавляем отступ между кнопками */
+}
+
+.tabOption button:hover {
+    background-color: #444; /* darker gray */
+}
+
+.tabOption button:active {
+    background-color: #555; /* even darker gray */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.tabOption button.deleteButton {
+    background-color: #ff4d4f; /* Цвет кнопки удалить */
+}
+
+.tabOption button.closeButton {
+    margin-top: auto; /* Положение кнопки закрыть внизу */
+    margin-bottom: 0; /* Убираем отступ снизу */
+}
+
+.editInputs {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    width: 100%; /* Инпуты занимают всю ширину контейнера */
+}
+
+.editInputs input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: rgba(51, 51, 51, 0.36);
+    color: #fff;
+    width: 95%;
+    font-size: 16px;
+    transition: background-color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.editInputs input[type="text"]:hover {
+    background-color: #444;
+}
+
+.editInputs input[type="text"]:focus {
+    background-color: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+@keyframes fadeInUp {
+    0% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeOutDown {
+    0% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+}

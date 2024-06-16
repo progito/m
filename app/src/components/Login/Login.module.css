@@ -1,0 +1,48 @@
+.container {
+
+    color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 300px;
+    margin: 0 auto; /* Устанавливаем автоматические отступы по бокам, чтобы контейнер был по центру */
+    text-align: center; /* Центрируем текст внутри контейнера */
+    display: flex; /* Используем flexbox для центрирования по вертикали */
+    flex-direction: column; /* Располагаем элементы в столбец */
+    justify-content: center; /* Выравниваем по центру по вертикали */
+    height: 100vh; /* Занимаем всю высоту видимой области экрана */
+}
+
+.container h2 {
+    color: #fff;
+}
+
+.container select,
+.container input[type="tel"],
+.container button,
+.container input[type="text"] {
+    background-color: #363636;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.container select:focus,
+.container input[type="tel"]:focus,
+.container input[type="text"]:focus {
+    outline: none;
+    box-shadow: 0 0 5px #1890ff;
+}
+
+.container button {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    width: 100%;
+}
+
+.container button:hover {
+    background-color: #555;
+}

@@ -1,0 +1,46 @@
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    font-size: 24px; /* Icon size */
+    color: #fff; /* Icon color */
+    background-color: transparent; /* Clear background color */
+    cursor: pointer;
+}
+
+.circle .gradientBackground {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure gradient fills entire circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: linear-gradient(#ABDBFF, #000000);
+}
+
+.dotContainer {
+    width: 10px; /* Width of the dot */
+    height: 15px; /* Height including space for the dot */
+    display: flex;
+    margin-top: 3px;
+    margin-right: 15px;
+    align-items: center;
+    justify-content: center;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(213, 218, 224, 0.84); /* Dot color */
+    border-radius: 50%; /* Dot shape */
+}

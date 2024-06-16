@@ -1,0 +1,192 @@
+.addTaskContainer {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+}
+
+.addTaskButton {
+    background-color: rgba(0, 123, 255, 0.96);
+    color: white;
+    border: none;
+    border-radius: 50%;
+    width: 50px;
+    height: 50px;
+    font-size: 24px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: transform 0.2s ease-in-out;
+}
+
+.addTaskButton:hover {
+    transform: scale(1.1);
+}
+
+.addTaskPanel {
+    position: fixed;
+    bottom: 80px;
+    right: 20px;
+    background-color: #333;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    border-radius: 8px;
+    width: 300px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    animation: slideIn 0.3s ease-out;
+    font-family: Arial, sans-serif;
+    font-size: 16px;
+}
+
+.addTaskPanel input[type="text"] {
+    padding: 10px;
+    border: none;
+    border-radius: 8px;
+    background-color: #333;
+    color: #fff;
+    width: 100%;
+    font-size: 16px;
+}
+
+.addTaskPanel input[type="text"]:hover {
+    background-color: #444;
+}
+
+.addTaskPanel input[type="text"]:focus {
+    background-color: #555;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.inputWithIcon {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.inputWithIcon input {
+    flex: 1;
+    border: none;
+    padding-right: 30px; /* Отступ для иконки */
+}
+
+.micIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: gray;
+}
+
+.recordingIcon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: rgba(18, 135, 237, 0.8);
+}
+
+.inputWithDropdown input {
+    padding-right: 30px; /* Отступ для dropdown */
+}
+
+.userDropdown {
+    max-height: 150px;
+    overflow-y: auto;
+    border: none;
+    border-radius: 4px;
+    margin-top: 5px;
+    box-shadow: 1px 10px 20px 0px #001eff2b;
+    background-color: #3f3f3f;
+    z-index: 10; /* Чтобы выпадающий список был выше других элементов */
+}
+
+.userDropdownItem {
+    display: flex;
+    align-items: center;
+    padding: 5px;
+    cursor: pointer;
+}
+
+.userDropdownItem:hover {
+    background-color: #5c5c5c;
+}
+
+.userIcon {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+    background-color: #347dce;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 10px;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.username {
+    font-size: 14px;
+}
+
+.addTaskPanel button[type="button"] {
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.addTaskPanel button[type="button"]:hover {
+    background-color: #0069d9;
+}
+
+.btn {
+    background-color: #333; /* dark gray */
+    color: #fff; /* white */
+    border-radius: 8px;
+    padding: 10px 20px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+    cursor: pointer;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    transition: background-color 0.2s ease-in-out;
+    border: none;
+}
+
+.btn:hover {
+    background-color: #444; /* darker gray */
+}
+
+.btn:active {
+    background-color: #555; /* even darker gray */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.charCount {
+    font-size: 14px;
+    margin-top: -10px;
+    margin-bottom: 10px;
+    text-align: right;
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(100%);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+
+
+.editButtons {
+    display: flex;
+    gap: 10px;
+}

@@ -1,0 +1,32 @@
+.tab {
+    padding: 10px 20px;
+    margin: 0 10px;
+    background-color: #444;
+    color: #e0e0e0;
+    border-radius: 5px 5px 0 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, color 0.3s ease;
+    position: relative;
+}
+
+.tab:hover {
+    background-color: #555;
+    color: #ffffff;
+}
+
+.tab::after {
+    content: '';
+    display: block;
+    height: 3px;
+    width: 0;
+    background: linear-gradient(90deg, rgba(0,157,255,1) 0%, rgba(0,122,204,1) 100%);
+    transition: width 0.3s ease;
+    position: absolute;
+    bottom: -2px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.tab.active::after {
+    width: 100%;
+}

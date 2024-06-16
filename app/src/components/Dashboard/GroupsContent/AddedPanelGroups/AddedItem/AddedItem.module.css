@@ -1,0 +1,26 @@
+.circle {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%; /* Circle shape */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 24px; /* Icon size */
+    color: #fff; /* Icon color */
+    background-color: transparent; /* Clear background color */
+    margin-right: 10px; /* Space between items */
+}
+
+.circle .gradientBackground {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%; /* Ensure gradient fills entire circle */
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.circle:first-child .gradientBackground {
+    background: linear-gradient(#1695F4, #013a64);
+    opacity: 0.9;
+}

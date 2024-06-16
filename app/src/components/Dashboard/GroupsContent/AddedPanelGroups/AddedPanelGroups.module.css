@@ -1,0 +1,71 @@
+.scrollContainer {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    margin-top: 55px;
+    background-color: #333; /* Dark background color */
+    border-radius: 10px; /* Rounded corners */
+    overflow-x: auto;
+    scrollbar-width: none; /* Firefox */
+    -ms-overflow-style: none;  /* Internet Explorer 10+ */
+}
+
+.scrollContainer::-webkit-scrollbar {
+    display: none; /* Safari and Chrome */
+}
+
+.fixedItem {
+    position: sticky;
+    left: 0;
+    z-index: 1; /* Ensure it stays on top of other items */
+    background-color: #333; /* Match the background color */
+    padding-right: 20px;
+}
+
+.circleContainer {
+    display: flex;
+    align-items: center;
+}
+
+.addPanel {
+    position: relative;
+    margin-top: 20px;
+    opacity: 0;
+    transition: opacity 0.3s ease-in-out;
+}
+
+.addPanel.active {
+    opacity: 1;
+}
+.input {
+    width: calc(100% - 100px);
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #555;
+    border-radius: 4px;
+    margin-right: 8px;
+    background-color: #eee;
+    color: #333;
+    transition: border-color 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+}
+
+.input:focus {
+    outline: none;
+    border-color: #007bff;
+    box-shadow: 0 0 0 0.2rem rgba(0, 123, 255, 0.25);
+}
+
+.submitButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+.submitButton:hover {
+    background-color: #0056b3;
+}

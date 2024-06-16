@@ -1,0 +1,52 @@
+.menuPanel {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 250px; /* Ширина панели */
+    height: 100%;
+    background-color: #2a2a2a; /* Темный фон */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Более темная тень */
+    z-index: 999; /* Уровень наверху */
+    transform: translateX(-250px); /* Панель по умолчанию скрыта за левым краем */
+    transition: transform 0.3s ease; /* Плавное изменение transform */
+    color: #fff; /* Белый текст */
+}
+
+.menuPanel.open {
+    transform: translateX(0); /* Показываем панель сдвигом вправо */
+}
+
+.menuIcon {
+    cursor: pointer;
+    padding: 10px;
+    color: #fff; /* Белая иконка */
+}
+
+.menuItems {
+    margin-top: 60px;
+    padding: 0;
+    list-style-type: none;
+    color: #fff;
+    font-size: 18px;
+}
+
+.menuItems li {
+    padding: 10px 20px;
+    cursor: pointer;
+}
+
+.menuItems li:hover {
+    background-color: #444; /* Цвет фона при наведении */
+}
+
+.closeIcon {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    color: #fff; /* Белая иконка */
+}
+
+.closeIcon:hover {
+    color: red; /* Цвет иконки при наведении */
+}
