@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Платформа для обучения</title>
+    <link rel="stylesheet" href="./css/styles.css">
+</head>
+<body>
+    <!-- Модальное окно для ввода кода -->
+    <div id="code-modal" class="modal" style="display:none;">
+        <div class="modal-content">
+            <span class="close" onclick="closeCodeModal()">&times;</span>
+            <h2>Введите код доступа</h2>
+            <input type="text" id="access-code" placeholder="Код доступа">
+            <button onclick="checkAccessCode()">Подтвердить</button>
+        </div>
+    </div>
+
+    <!-- Основной контейнер курса -->
+    <div id="course-container" style="display:none;">
+        <div class="pl">
+            <h2>Python курс 2.0</h2>
+        </div>
+        <div class="panel" id="module1" onclick="openModule(1)">
+            1 Модуль - Введение <div class="indicator gray"></div>
+        </div>
+        <div class="panel" id="module2" onclick="openModule(2)">
+            2 Модуль - Основы ЯП <div class="indicator gray"></div>
+        </div>
+        <div class="panel meeting-panel important" id="meeting1" onclick="openModal(1)">
+            Встреча с Андреем <div class="indicator blue"></div>
+        </div>
+        <div class="panel" id="module3" onclick="openModule(3)">
+            3 Модуль - ООП <div class="indicator gray"></div>
+        </div>
+        <div class="panel meeting-panel important" id="meeting2" onclick="openModal()">
+            Встреча с Андреем <div class="indicator blue"></div>
+        </div>
+        <div class="panel" id="module4" onclick="openModule(4)">
+            4 Модуль - Алгоритмы и Структуры данных (АИСД) <div class="indicator gray"></div>
+        </div>
+        <div class="panel" id="module5" onclick="openModule(5)">
+            5 Модуль - Модули и Библиотеки <div class="indicator gray"></div>
+        </div>
+        <div class="panel meeting-panel important" id="meeting3" onclick="openModal()">
+            Встреча с Андреем <div class="indicator blue"></div>
+        </div>
+        <div class="panel" id="module6" onclick="openModule(6)">
+            6 Модуль - Работа с Базой данных (sqlite, mysql) <div class="indicator gray"></div>
+        </div>
+        <div class="panel meeting-panel important" id="meeting4" onclick="openModal()">
+            Встреча с Андреем <div class="indicator blue"></div>
+        </div>
+        <div class="panel" id="module7" onclick="openModule(7)">
+            7 Модуль - PyQt6 <div class="indicator gray"></div>
+        </div>
+        <div class="panel" id="module8" onclick="openModule(8)">
+            8 Модуль - (основы) Flask/Django <div class="indicator gray"></div>
+        </div>
+        <div class="panel meeting-panel important" id="meeting5" onclick="openModal()">
+            Встреча с Андреем <div class="indicator blue"></div>
+        </div>
+        <div class="panel" id="module9" onclick="openModule(9)">
+            9 Модуль - Подготовка резюме <div class="indicator gray"></div>
+        </div>
+        <div class="panel" id="module9" onclick="openModule(10)">
+            10 Модуль - Завершение курса <div class="indicator gray"></div>
+        </div>
+        <div class="panel meeting-panel important" id="meeting6" onclick="openModal()">
+            Встреча с Андреем <div class="indicator blue"></div>
+        </div>
+    </div>
+
+    <!-- Контент модуля -->
+    <div id="module-content" style="display:none;">
+        <h2 id="module-title"></h2> <!-- Добавлен элемент заголовка -->
+        <div id="module-sections-container"></div>
+    </div>
+
+    <!-- Контент раздела -->
+    <div id="section-content" style="display:none;">
+        <h3 id="section-title"></h3>
+        <div id="section-videos"></div>
+        <p id="section-comment"></p>
+        <button id="next-section" onclick="nextSection()" style="display:none;">Следующий раздел</button>
+    </div>
+
+    <!-- Тестовый контент -->
+    <div id="test-content" style="display:none;">
+        <iframe id="test-iframe" src="" frameborder="0"></iframe>
+        <button onclick="completeTest()">Завершить тест</button>
+        <a href="index.html">назад в главное меню</a>
+    </div>
+
+    <!-- Остальной код HTML остается без изменений -->
+    <script src="./js/script.js" defer></script>
+    <script src="./js/checker.js" defer></script>
+</body>
+</html>

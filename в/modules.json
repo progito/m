@@ -1,0 +1,403 @@
+{
+    "1": {
+        "title": "1 Модуль - Введение",
+        "sections": [
+            {
+                "id": "intro",
+                "name": "Вступительное слово",
+                "videos": ["video1.mp4"],
+                "files": ["presentation.pdf"],
+                "comment": "Добро пожаловать на курс!"
+            },
+            {
+                "id": "efficiency",
+                "name": "Как проходить курс с максимальной эффективностью?",
+                "videos": ["video2.mp4"],
+                "comment": "Это поможет вам лучше организовать своё обучение."
+            },
+            {
+                "id": "whoIsProgrammer",
+                "name": "Кто такой программист и что такое язык программирования?",
+                "comment": "Программирование — это процесс создания инструкций для компьютера, которые объясняют ему, что нужно сделать. Эти инструкции пишутся на специальных языках программирования, которые понятны как человеку, так и компьютеру.\n\nПрограммист — это тот, кто составляет такие инструкции, используя логику и алгоритмы для решения различных задач. Языки программирования — это как мост между людьми и машинами. Они помогают программистам формулировать свои мысли так, чтобы компьютер смог их понять.\n\nДля того чтобы компьютер мог выполнить написанный код, его нужно преобразовать в машинный язык. Этим занимается компилятор — программа, которая переводит весь код в инструкции, понятные машине. В отличие от компилятора, интерпретатор выполняет программу построчно, переваривая и исполняя её шаг за шагом, без предварительного перевода всего кода сразу.\n\nПрограммисты часто работают в специальных программах, называемых IDE (Integrated Development Environment). IDE предоставляет удобную среду, где можно писать код, проверять его на ошибки и запускать. Это как рабочее место программиста, где всё под рукой.\n\nКогда программист пишет код, он создаёт набор команд для компьютера. Каждая команда или инструкция — это маленький шаг, который компьютер должен выполнить. Все эти команды объединяются в алгоритмы, которые являются чёткими и последовательными инструкциями для выполнения задачи. Например, алгоритм может описывать, как сортировать числа или как обрабатывать данные в программе.\n\nТаким образом, программирование — это процесс составления кода, состоящего из инструкций и алгоритмов, который затем преобразуется в машинный язык с помощью компилятора или интерпретатора."
+            }                 
+        ],
+        "testUrl": "https://forms.gle/QsGoHcee6f4i8G9JA"
+    },
+    "2": {
+        "title": "2 Модуль - Основы ЯП",
+        "sections": [
+            {
+                "id": "syntax",
+                "name": "Знакомство с VSCode, Установка Python",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "print",
+                "name": "Функция print()",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "vars",
+                "name": "Переменные и типы данных",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oper_vars",
+                "name": "Операции над переменными",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "types",
+                "name": "Функция type(). Преобразование типов данных.",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "input",
+                "name": "Функция input()",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "f-strings",
+                "name": "F-строки. Комментарии и docstring.",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "if",
+                "name": "Условный оператор (if-elif-else)",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "strings",
+                "name": "Строки и их методы",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "loop",
+                "name": "Циклы (while, for)",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "git",
+                "name": "Базовая работа с GIT/GITHUB",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "work_files",
+                "name": "Работа с файлами и PEP.",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "collections",
+                "name": "Коллекции в Python",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "lists",
+                "name": "Списки",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "slices",
+                "name": "Срезы",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "tuples",
+                "name": "Кортежи",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "sets",
+                "name": "Множества",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "dicts",
+                "name": "Словари",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "funcs",
+                "name": "Функции",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "useful_funcs",
+                "name": "Полезные функции",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "global_vars",
+                "name": "Глобальные переменные",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "povtor1",
+                "name": "Повторение-1",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "povtor2",
+                "name": "Повторение-2",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "povtor3",
+                "name": "Повторение-3",
+                "videos": ["video3.mp4"]
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc-xq1z3/viewform"
+    },
+    "3": {
+        "title": "3 Модуль - ООП",
+        "sections": [
+            {
+                "id": "oop",
+                "name": "Введение в ООП",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop1",
+                "name": "Классы и объекты",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop2",
+                "name": "Атрибуты и Методы класса",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop3",
+                "name": "Конструктор/Деструктор класса",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop4",
+                "name": "Ключевое слово self",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop5",
+                "name": "Концепции ООП",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop6",
+                "name": "super().__init__()",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop7",
+                "name": "Понятие <<заглушки>> или <<защищенная>>",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop8",
+                "name": "public/private атрибуты/методы",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop9",
+                "name": "Статические и классовые методы",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop10",
+                "name": "Магические методы (__len__, …)",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop11",
+                "name": "Исключения и обработка ошибок (try-except).",
+                "videos": ["video3.mp4"]
+            },
+            {
+                "id": "oop12",
+                "name": "Логирование (logging)",
+                "videos": ["video3.mp4"]
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSfb2B-3vG/viewform"
+    },
+    "4": {
+        "title": "4 Модуль - Алгоритмы",
+        "sections": [
+            {
+                "id": "intro",
+                "name": "Введение в АИСД",
+                "videos": ["video4.mp4"]
+            },
+            {
+                "id": "stackQueueDeque",
+                "name": "Стек/очередь и дек",
+                "videos": ["video4.mp4"]
+            },
+            {
+                "id": "linkedList",
+                "name": "Связный список",
+                "videos": ["video4.mp4"]
+            },
+            {
+                "id": "hashTable",
+                "name": "Хеш-таблица",
+                "videos": ["video4.mp4"]
+            },
+            {
+                "id": "trees",
+                "name": "Деревья",
+                "videos": ["video4.mp4"]
+            },
+            {
+                "id": "graphs",
+                "name": "Графы",
+                "videos": ["video4.mp4"]
+            },
+            {
+                "id": "applications",
+                "name": "Практическое применение алгоритмов",
+                "videos": ["video4.mp4"]
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc8Ajs7Z/viewform"
+    },
+    "5": {
+        "title": "5 Модуль - Работа с данными",
+        "sections": [
+            {
+                "id": "introDB",
+                "name": "Введение в БД",
+                "videos": ["video5.mp4"]
+            },
+            {
+                "id": "typesDB",
+                "name": "Виды/разновидности БД",
+                "videos": ["video5.mp4"]
+            },
+            {
+                "id": "sqlite",
+                "name": "SQLite",
+                "videos": ["video5.mp4"]
+            },
+            {
+                "id": "mysql",
+                "name": "MySQL",
+                "videos": ["video5.mp4"]
+            },
+            {
+                "id": "sqlIntegration",
+                "name": "Применение SQL совместно с приложением",
+                "videos": ["video5.mp4"]
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc7Osd5/viewform"
+    },
+    "6": {
+        "title": "6 Модуль - Веб-разработка",
+        "sections": [
+            {
+                "id": "htmlCss",
+                "name": "HTML и CSS",
+                "videos": ["video6.mp4"]
+            },
+            {
+                "id": "javascript",
+                "name": "JavaScript",
+                "videos": ["video6.mp4"]
+            },
+            {
+                "id": "frameworks",
+                "name": "Фреймворки",
+                "videos": ["video6.mp4"]
+            },
+            {
+                "id": "flask",
+                "name": "Основы работы с Flask",
+                "videos": ["video6.mp4"]
+            },
+            {
+                "id": "django",
+                "name": "Основы работы с Django",
+                "videos": ["video6.mp4"]
+            },
+            {
+                "id": "practicalUsage",
+                "name": "Практическое использование веб-технологий",
+                "videos": ["video6.mp4"]
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc9I06j8/viewform"
+    },
+    "7": {
+        "title": "7 Модуль - Проектирование",
+        "sections": [
+            {
+                "id": "designPatterns",
+                "name": "Шаблоны проектирования",
+                "videos": ["video7.mp4"]
+            },
+            {
+                "id": "architecture",
+                "name": "Архитектура приложений",
+                "videos": ["video7.mp4"]
+            },
+            {
+                "id": "bestPractices",
+                "name": "Лучшие практики",
+                "videos": ["video7.mp4"]
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc9B0Vhg/viewform"
+    },
+    "8": {
+        "title": "8 Модуль - Завершение",
+        "sections": [
+            {
+                "id": "review",
+                "name": "Обзор курса",
+                "videos": ["video8.mp4"]
+            },
+            {
+                "id": "finalProject",
+                "name": "Финальный проект",
+                "videos": ["video8.mp4"],
+                "comment": "Примените все знания, полученные в курсе, для создания финального проекта."
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc7g9Wg/viewform"
+    }, 
+    "9": {
+        "title": "9 Модуль - Подготовка резюме",
+        "sections": [
+            {
+                "id": "review",
+                "name": "Обзор курса",
+                "videos": ["video8.mp4"]
+            },
+            {
+                "id": "finalProject",
+                "name": "Финальный проект",
+                "videos": ["video8.mp4"],
+                "comment": "Примените все знания, полученные в курсе, для создания финального проекта."
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc7g9Wg/viewform"
+    }, 
+    "10": {
+        "title": "10 Модуль - Завершение",
+        "sections": [
+            {
+                "id": "review",
+                "name": "Обзор курса",
+                "videos": ["video8.mp4"]
+            },
+            {
+                "id": "finalProject",
+                "name": "Финальный проект",
+                "videos": ["video8.mp4"],
+                "comment": "Примените все знания, полученные в курсе, для создания финального проекта."
+            }
+        ],
+        "testUrl": "https://docs.google.com/forms/d/e/1FAIpQLSc7g9Wg/viewform"
+    }
+}

@@ -1,0 +1,202 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    color: #333;
+    margin: 0;
+    padding: 20px;
+}
+
+#course-container, #module-content, #section-content, #test-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+    color: #007BFF;
+    font-weight: bold;
+    margin-bottom: 20px;
+    display: inline-block;
+}
+
+.panel {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.success {
+    background-color: #a9d5b5;
+    border: 1px solid #38bf70 ; /* Прозрачный бордер */
+    border-radius: 10px; /* Закругленные углы */
+    background-clip: padding-box; /* Обрезаем фон по краям */
+    position: relative; /* Устанавливаем позиционирование */
+}
+
+.panel:hover {
+    background-color: #e9e9e9;
+    transform: translateY(-5px);
+}
+
+.meeting-panel.important {
+    border-left: 5px solid #007BFF;
+}
+
+.indicator {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    margin-left: 10px;
+}
+
+.indicator.gray {
+    background-color: gray;
+}
+
+.indicator.green {
+    background-color: green;
+
+}
+
+.indicator.blue {
+    background-color: blue;
+}
+
+video {
+    width: 100%;
+    margin: 10px 0;
+}
+
+button {
+    background-color: #007BFF;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+input[type="radio"] {
+    margin-right: 10px;
+}
+/* Стили для модального окна */
+.modal {
+    display: none; /* Скрыто по умолчанию */
+    position: fixed; 
+    z-index: 1000; /* Над другими элементами */
+    left: 0;
+    top: 0;
+    width: 100%; 
+    height: 100%; 
+    overflow: auto; 
+    background-color: rgba(0, 0, 0, 0.7); /* Полупрозрачный фон */
+    animation: fadeIn 0.5s; /* Анимация появления */
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
+.modal-content {
+    background-color: #fff; /* Цвет фона */
+    margin: 15% auto; /* Центрируем */
+    padding: 20px;
+    border-radius: 10px; /* Закругленные углы */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Тень */
+    width: 80%; /* Ширина модального окна */
+    max-width: 500px; /* Максимальная ширина */
+    animation: slideDown 0.5s; /* Анимация для появления контента */
+}
+
+@keyframes slideDown {
+    from { transform: translateY(-30px); opacity: 0; }
+    to { transform: translateY(0); opacity: 1; }
+}
+
+.close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Кнопка для записи на встречу */
+.book-button {
+    background-color: #4CAF50; /* Зеленый фон */
+    color: white; /* Белый текст */
+    padding: 10px 20px; /* Внутренние отступы */
+    border: none; /* Без рамки */
+    border-radius: 5px; /* Закругленные углы */
+    cursor: pointer; /* Курсор при наведении */
+    transition: background-color 0.3s; /* Плавное изменение фона */
+}
+
+.book-button:hover {
+    background-color: #45a049; /* Темно-зеленый при наведении */
+}
+
+/* Эффект размытия фона */
+.blur {
+    filter: blur(5px);
+}
+#test-content {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+    padding: 20px;
+    max-width: 800px;
+    margin: 0 auto;
+    text-align: center;
+}
+
+#test-iframe {
+    width: 100%;
+    height: 500px; /* Можно изменить в зависимости от нужд */
+    border: none;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+    margin-bottom: 20px;
+}
+
+.panel {
+    border-radius: 10px;
+}
+.panel.disabled {
+    background-color: #cacaca; /* Светло-серый для недоступного модуля */
+    opacity: 0.7;
+    cursor: not-allowed; /* Изменение курсора для недоступного модуля */
+}
+.pl {
+    border-radius: 10px;
+    background-color: #2d64fb;
+    color: white;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin: 10px 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+    font-size: 18px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
